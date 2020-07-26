@@ -1,0 +1,12 @@
+<h1>add student</h1>
+<button type="button"(click)="addData()">add</button>
+{{error}}
+<ul *ngFor ="let e of employee">
+    <li>
+        Id:- {{e.eId}}
+    </li>
+    <li>
+        Name -{{e.eName}}
+    </li>
+    <button type="button" (click)=delete(e.eId)>DELETE</button>
+</ul>
